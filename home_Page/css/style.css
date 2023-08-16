@@ -1,121 +1,76 @@
-*{
-    margin: 0;
+@import url('https://fonts.cdnfonts.com/css/mintaka');
+
+* {
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial;
+    margin: 0;
+    box-sizing: border-box
 }
-body{
-    background: url(bg.jpg);
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
+
+.navbar-brand-style {
+    color: #3C4242;
+    font-family: 'Mintaka', sans-serif;
+    font-size: 34.064px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-header{
-    width:100%;
-    height: 100px;
+
+.navbar-color {
+    background-color: #FFF;
+}
+
+.nav-link {
+    color: #3C4242;
+    font-family: Causten;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inputBox {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 99;
-    box-shadow: 0 0 10px #000;
-    background: rgba(0,0,0,0.5);
-}
-#chk1{
-    display: none;
-     
-     
-}
-i{
-    color: #fff;
-    cursor: pointer;
-}
-header .logo{
-    flex: 1;
-    color:#fff;
-     
-    margin-left: 50px;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-header .search-box{
-    flex: 1;
     position: relative;
+    width: 267px;
+    align-items: center;
+    gap: 12px;
+    
 }
-.search-box input{
-    width:100%;
-    height: 40px;
+
+
+.inputBox input {
+    padding: 15px, 0px;  
     border: none;
     outline: none;
-    background:#f2f2f2;
-    border-radius: 30px;
-    color:gray;
-    font-size: 16px;
+    width: 100%;
+    background: #F1F1F1;
+    border-radius: 8px;
+    font-size: 1em;
+    height: 45px;
+    width: 267px;
+    align-items: center;
     padding-left: 5px;
-    padding-right: 40px;
-    text-align: center;
-     
+    gap: 12px;
 }
- 
-.search-box button{
-    cursor: pointer;
-    width:40px;
-    height: 40px;
-    border-radius: 30px;
-    border:none;
+
+.inputBox i {
     position: absolute;
-    top:0;
-    right: 0;
-    transform: scale(0.9);
-    background: green;
-    color: #fff;
+    left: 0;
 }
-header ul {
-    flex:2;
+
+.icon-container {
     display: flex;
-    justify-content: space-evenly;
 }
-header ul li{
-    list-style: none;
-}
-header ul li a{
-    text-decoration: none;
-    color:#fff;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 10px 15px;
-}
-header ul li a:hover{
-    border-bottom: 2px solid cadetblue;
-}
-header .menu{
-    font-size: 2.5em;
-    display: none;
-}
-@media(max-width:1000px){
-    .search-box button{
-        position: absolute;
-    }
-    header ul{
-        position: fixed;
-        top:100px;
-        right: -100%;
-        background: rgba(0,0,0,0.5);
-        height: calc(100vh - 100px);
-        width:50%;
-        flex-direction: column;
-        align-items: center;
-        transition: right 0.5s linear;
-    }
-     
-    header .menu{
-        display: block;
-        width:100px;
-        text-align: center;
-    }
-    #chk1:checked ~ ul{
-        right: 0;
-        
-    }
-  
+
+.icon-item {
+    padding-top: 8px;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background: #F1F1F1;
+    margin-left: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
